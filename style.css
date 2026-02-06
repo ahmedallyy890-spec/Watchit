@@ -1,0 +1,133 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(20, 23, 32);
+}
+@keyframes text-animation {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes watchit-animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    animation-name: text-animation;
+    animation-duration: 1.5s;
+    opacity: 0;
+}
+.text .watchit-text {
+    color: white;
+}
+.text .watchit-text span {
+    color: rgb(249, 174, 1);
+    font-weight: 900;
+    font-size: 2em;
+    padding: 15px;
+}
+.watchit {
+    animation-name: watchit-animation;
+    animation-duration: 6s;
+}
+header {
+    border: 1px solid rgb(58, 67, 76);
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    border-radius: 50px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 8%), rgba(255, 255, 255, 2%), rgba(255, 255, 255, 8%));
+    align-items: center;
+}
+nav {
+    display: flex;
+    gap: 4rem;
+}
+nav a {
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    height: 30px;
+    font-weight: 700;
+}
+nav .different {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    color: black;
+}
+.content {
+    animation-name: watchit-animation;
+    animation-duration: 6s;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    animation-name: watchit-animation;
+    animation-duration: 6s;
+    margin-top: 110px;
+}
+.container .box img {
+    width: 280px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 25px;
+    border: 2px solid rgb(69, 78, 87);
+    padding: 3px;
+    transition: 0.3s ease;
+}
+.container .box img:hover {
+    border-radius: 7px;
+    border: 2px solid rgb(251, 251, 251);
+}
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        gap: 1rem;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        animation-name: watchit-animation;
+        animation-duration: 6s;
+        margin-top: 110px;
+    }
+    nav a {
+        font-size: medium;
+        color: white;
+        text-decoration: none;
+        height: 20px;
+        font-weight: 700;
+    }
+    body {
+        margin: 0;
+    }
+    .text .watchit-text span {
+        color: rgb(249, 174, 1);
+        font-weight: 900;
+        font-size: 30px;
+        padding: 15px;
+    }
+    .text .watchit-text {
+        color: white;
+        font-size: 25px;
+    }
+}
