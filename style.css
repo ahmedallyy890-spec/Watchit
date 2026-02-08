@@ -87,6 +87,7 @@ nav .different {
 .container .box img {
     width: 280px;
     height: 150px;
+    object-fit: cover;
     display: inline-block;
     border-radius: 25px;
     border: 2px solid rgb(69, 78, 87);
@@ -132,3 +133,4 @@ nav .different {
     }
 
 }
+
